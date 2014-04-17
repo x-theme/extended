@@ -1,15 +1,19 @@
 <?xml version="1.0"?>
 <config>
+	<id>theme extended</id>
 	<type>theme</type>
 	<view>pc,mobile</view>
+	<category>company</category>
 	<name>
 		<en>WithDesign Theme</en>
 		<ko>WithDesign Theme</ko>
 	</name>
 	<version>0.1</version>
+	<author>JaeHo Song</author>
+	<email>thruthesky@gmail.com</email>
 	<short>
-		<en></en>
-		<ko></ko>
+		<en>Extended No. 1</en>
+		<ko>Extended No. 1</ko>
 	</short>
 	<detail>
 		<en></en>
