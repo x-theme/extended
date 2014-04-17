@@ -22,7 +22,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<div class='header'>
 		<div class='inner'>
 			<div class='logo-wrapper'>
-				<div class='logo'><a href='<?=G5_URL?>'><img src='<?=x::url_theme()?>/img/logo.png'/></a></div>
+				<div class='logo'><a href='<?=g::url()?>'><img src='<?=x::url_theme()?>/img/logo.png'/></a></div>
 				<div class='text-info tablet'>
 					<span class='info call-us'>문의 070-7529-1749</span> <a class='info text'>/</a>
 					<a href='<?=G5_BBS_URL?>/board.php?bo_table=qna' class='info text'>질문과 답변 /</a>
