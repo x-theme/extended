@@ -7,15 +7,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <?
 		if( $member['mb_id'] ) {
 			$login_msg = "로그아웃";			
-			$log_href = G5_BBS_URL."/logout.php";			
+			$log_href = url_bbs()."/logout.php";			
 			$profile_msg = "회원정보";
-			$profile_msg_url = G5_BBS_URL."/member_confirm.php?url=register_form.php";
+			$profile_msg_url = url_bbs()."/member_confirm.php?url=register_form.php";
 		}
 		else {
 			$login_msg = "로그인";
-			$log_href = G5_BBS_URL."/login.php";			
+			$log_href = url_bbs()."/login.php";			
 			$profile_msg = "회원가입";
-			$profile_msg_url = G5_BBS_URL."/register.php";			
+			$profile_msg_url = url_register();			
 		}
 	?>
 <div class ='layout'>
@@ -25,7 +25,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 				<div class='logo'><a href='<?=g::url()?>'><img src='<?=x::url_theme()?>/img/logo.png'/></a></div>
 				<div class='text-info tablet'>
 					<span class='info call-us'>문의 070-7529-1749</span> <a class='info text'>/</a>
-					<a href='<?=G5_BBS_URL?>/board.php?bo_table=qna' class='info text'>질문과 답변 /</a>
+					<a href='<?=url_bbs()?>/board.php?bo_table=qna' class='info text'>질문과 답변 /</a>
 					<a href='<?=$log_href?>' class='info text'><?=$login_msg?> /</a>
 					<a href='<?=$profile_msg_url?>' class='info text'><?=$profile_msg?></a>
 					<?if ( admin() ){?>
@@ -39,9 +39,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 			</div>
 			<div class='right_main_menus above-400px'>
 				<ul>
-					<li><div class='extra-border'></div><a href='<?=G5_BBS_URL?>/write.php?bo_table=quotation'>사이트<br /> 제작의뢰</a></li>
-					<li><div class='extra-border'></div><a href='<?=G5_BBS_URL?>/write.php?bo_table=quotation'>로고 배너<br /> 제작의뢰</a></li>
-					<li><div class='extra-border'></div><a href='<?=G5_BBS_URL?>/board.php?bo_table=ms_www_3'>사이트<br />갤러리</a></li>
+					<li><div class='extra-border'></div><a href='<?=url_bbs()?>/write.php?bo_table=quotation'>사이트<br /> 제작의뢰</a></li>
+					<li><div class='extra-border'></div><a href='<?=url_bbs()?>/write.php?bo_table=quotation'>로고 배너<br /> 제작의뢰</a></li>
+					<li><div class='extra-border'></div><a href='<?=url_bbs()?>/board.php?bo_table=ms_www_3'>사이트<br />갤러리</a></li>
 					<li><div class='extra-border'></div><a href='<?=g::url()?>/?page=template_main'>템플릿<br />갤러리</a></li>							
 				</ul>						
 				<div style='clear:both;'></div>
@@ -49,7 +49,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 			<div style='clear:both;'></div>
 			<div class='text-info web-browser'>
 				<span class='info call-us'>문의 070-7529-1749</span> <a class='info text'>/</a> 
-				<a href='<?=G5_BBS_URL?>/board.php?bo_table=ms_www_2' class='info text'>질문과 답변 /</a>
+				<a href='<?=url_bbs()?>/board.php?bo_table=ms_www_2' class='info text'>질문과 답변 /</a>
 				<a href='<?=$log_href?>' class='info text'><?=$login_msg?> /</a>
 				<a href='<?=$profile_msg_url?>' class='info text'><?=$profile_msg?> </a>
 				<? if ( admin() ) { ?>
@@ -63,9 +63,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 		</div>
 			<div class='right_main_menus below-400px'>
 				<ul>
-					<li><div class='extra-border'></div><a href='<?=G5_BBS_URL?>/write.php?bo_table=quotation'>사이트<br /> 제작의뢰</a></li>
-					<li><div class='extra-border'></div><a href='<?=G5_BBS_URL?>/write.php?bo_table=quotation'>로고 배너<br /> 제작의뢰</a></li>
-					<li><div class='extra-border'></div><a href='<?=G5_BBS_URL?>/write.php?bo_table=ms_www_3'>사이트<br />갤러리</a></li>
+					<li><div class='extra-border'></div><a href='<?=url_bbs()?>/write.php?bo_table=quotation'>사이트<br /> 제작의뢰</a></li>
+					<li><div class='extra-border'></div><a href='<?=url_bbs()?>/write.php?bo_table=quotation'>로고 배너<br /> 제작의뢰</a></li>
+					<li><div class='extra-border'></div><a href='<?=url_bbs()?>/write.php?bo_table=ms_www_3'>사이트<br />갤러리</a></li>
 					<li><div class='extra-border'></div><a href='j<?=g::url()?>/?page=template_main'>템플릿<br />갤러리</a></li>						
 				</ul>						
 				<div style='clear:both;'></div>
